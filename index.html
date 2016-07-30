@@ -28,15 +28,23 @@
         $('#buttonArea').append(createButton);
     }
 
+    $('#addItem').on('click', function() {
+console.log('Pressed Button');
 
-$('#runSearch').on('click', function() {
+        var newButton = $("#addItemText").val();
+        var createButton = $('<button>');
+        createButton.attr("data-button", newButton);
+        createButton.attr("class","button");
+        createButton.text (newButton);
+        $('#buttonArea').append(createButton);
+});
 
-console.log ('Ran Search')
-}
 
 
     //
   $( ".button").click(function() {
+
+
 
         var buttonArea = this.getAttributeNode("data-button").value;
 
