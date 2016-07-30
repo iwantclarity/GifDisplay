@@ -5,6 +5,10 @@
 </head>
 
 <body>
+    <div id ="textfield">
+    <input type="text" id=addItemText name="addItemText">
+    <button id="addItem">Submit</button>
+    </div>
     <div id="buttonArea">
     <!-- <button id="buttoncat">magical cat button</button> -->
     </div>
@@ -24,6 +28,11 @@
         $('#buttonArea').append(createButton);
     }
 
+
+$('#runSearch').on('click', function() {
+
+console.log ('Ran Search')
+}
 
 
     //
@@ -151,11 +160,11 @@
 
 
             });
-            
+
 
 
     });
-  
+
 
     </script>
 </body>
